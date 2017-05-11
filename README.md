@@ -31,10 +31,14 @@
 
 ## Configuration
 
-| Command       | Explanation |
-| ------------- | ----------- |
-| :set number   | turn on line numbering |
-| :set nonumber | turn off line numbering |
+| Command         | Explanation |
+| --------------- | ----------- |
+| :set number     | turn on line numbering |
+| :set nonumber   | turn off line numbering |
+| :set hlsearch   | turn on highlighting for search matches |
+| :set nohlsearch | turn off highlighting for search matches | 
+| :set incsearch  | turn on incremental searches |
+| :set noincsearch  | turn off incremental searches |
 
 ## Movement
 
@@ -101,6 +105,20 @@
 | F&lt;character&gt; | move cursor to last &lt;character&gt; |
 | t&lt;character&gt; | move cursor before next &lt;character&gt; |
 | T&lt;character&gt; | move cursor behind last &lt;character&gt; |
+| /&lt;string&gt;    | forward search for &lt;string&gt; |
+| ?&lt;string&gt;    | backward search for &lt;string&gt; |
+| n                  | jump to next match |
+| N                  | jump to next match reverse direction |
+| :nohlsearch        | clear highlighting for current search |
+
+## Regular Expressions for Searches
+
+| Character          | Explanation |
+| ------------------ | ----------- |
+| ^                  | start of line |
+| $                  | end of line |
+| .                  | single character |
+| \&lt;character&gt; | turn of special meaning of &lt;character&gt; |
 
 
 # References
