@@ -15,9 +15,9 @@
 | &lt;F1&gt;               | open help |
 | | |
 | &lt;ESC&gt;              | leave mode/cancel operation |
-| &lt;number&gt;           | multiplies commands by &lt;number&gt; |
+| &lt;number&gt;           | multiply command by &lt;number&gt; |
 | &lt;CTRL&gt;+G           | display status about file |
-| .                        | repeats last command  |
+| .                        | repeat last command  |
 | J                        | join line |
 | | |
 | u                        | undo last edit |
@@ -90,7 +90,7 @@
 
 | Command         | Explanation |
 | --------------- | ----------- |
-| c&lt;motion&gt; | changes all up to &lt;motion&gt; (exception is cw which acts as ce) |
+| c&lt;motion&gt; | change all up to &lt;motion&gt; (exception is cw which acts as ce) |
 | cc              | change current line |
 | C               | change up to end of line (like c$) |
 | r               | replace character under cursor |
@@ -126,12 +126,12 @@
 
 ## Regular Expressions for Searches
 
-| Character          | Explanation |
-| ------------------ | ----------- |
-| ^                  | start of line |
-| $                  | end of line |
-| .                  | single character |
-| \&lt;character&gt; | turn of special meaning of &lt;character&gt; |
+| Character           | Explanation |
+| ------------------- | ----------- |
+| ^                   | start of line |
+| $                   | end of line |
+| .                   | single character |
+| \\&lt;character&gt; | turn of special meaning of &lt;character&gt; |
 
 # References
 
