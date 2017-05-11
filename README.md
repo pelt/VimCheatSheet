@@ -42,21 +42,25 @@
 
 ## Movement
 
-| Command         | Explanation |
-| --------------- | ----------- |
-| h               | move cursor left
-| j               | move cursor down
-| k               | move cursor up
-| l               | move cursor right
-| w               | move cursor forward one word
-| b               | move cursor backward one word
-| 0               | move cursor to start of line
-| ^               | move cursor to first nonblank character in line
-| $               | move cursor to end of line
-| G               | move cursor to last line
-| &lt;number&gt;G | move cursor to line &lt;number&gt;
-| &lt;CTRL&gt;+U  | move cursor half page up
-| &lt;CTRL&gt;+D  | move cursor half page down
+| Command            | Explanation |
+| ------------------ | ----------- |
+| h                  | move cursor left
+| j                  | move cursor down
+| k                  | move cursor up
+| l                  | move cursor right
+| w                  | move cursor forward one word
+| b                  | move cursor backward one word
+| 0                  | move cursor to start of line
+| ^                  | move cursor to first nonblank character in line
+| $                  | move cursor to end of line
+| G                  | move cursor to last line
+| &lt;number&gt;G    | move cursor to line &lt;number&gt;
+| &lt;CTRL&gt;+U     | move cursor half page up
+| &lt;CTRL&gt;+D     | move cursor half page down
+| f&lt;character&gt; | move cursor to next &lt;character&gt; |
+| F&lt;character&gt; | move cursor to last &lt;character&gt; |
+| t&lt;character&gt; | move cursor before next &lt;character&gt; |
+| T&lt;character&gt; | move cursor behind last &lt;character&gt; |
 
 ## Inseration
 
@@ -101,10 +105,6 @@
 
 | Command            | Explanation |
 | ------------------ | ----------- |
-| f&lt;character&gt; | move cursor to next &lt;character&gt; |
-| F&lt;character&gt; | move cursor to last &lt;character&gt; |
-| t&lt;character&gt; | move cursor before next &lt;character&gt; |
-| T&lt;character&gt; | move cursor behind last &lt;character&gt; |
 | /&lt;string&gt;    | forward search for &lt;string&gt; |
 | ?&lt;string&gt;    | backward search for &lt;string&gt; |
 | n                  | jump to next match |
