@@ -8,26 +8,32 @@
 ** insert
 ** command
 
-| Command            | Explanation |
-| ------------------ | ----------- |
-| :help [command]    | open help, optionally for specific command |
-| :help tutor        | open tutor |
+| Command                  | Explanation |
+| ------------------------ | ----------- |
+| :help [command]          | open help, optionally for specific command |
+| :help tutor              | open tutor |
 | &lt;F1&gt;               | open help |
 | | |
 | &lt;ESC&gt;              | leave mode/cancel operation |
 | &lt;number&gt;           | multiplies commands by &lt;number&gt; |
 | &lt;CTRL&gt;+G           | display status about file |
-| .                  | repeats last command  |
-| J                  | join line |
+| .                        | repeats last command  |
+| J                        | join line |
 | | |
-| u                  | undo last edit |
+| u                        | undo last edit |
 | &lt;CTRL&gt;+r           | redo the last undo |
 | | |
 | q&lt;alpha-character&gt; | start recording of keystrokes, q stops the recoding |
 | @&lt;alpha-character&gt; | replay keystrokes stored in register &lt;alpha-character&gt; |
 | | |
-| :digraphs          | shows available digraph character |
+| :digraphs                | shows available digraph character |
 | &lt;CTRL&gt;+k           | insert digraph (in insert mode) |
+| | |
+| :marks                   | show all marks |
+| | |
+| !&lt;motion&gt;&lt;external commmand&gt; | filter the selected area by &lt;external command&gt; |
+| !!&lt;external commmand&gt; | filter the current line by &lt;external command&gt; |
+
 
 ## Configuration
 
@@ -42,36 +48,43 @@
 
 ## Movement
 
-| Command            | Explanation |
-| ------------------ | ----------- |
-| h                  | move cursor left
-| j                  | move cursor down
-| k                  | move cursor up
-| l                  | move cursor right
-| w                  | move cursor forward one word
-| b                  | move cursor backward one word
-| 0                  | move cursor to start of line
-| ^                  | move cursor to first nonblank character in line
-| $                  | move cursor to end of line
-| G                  | move cursor to last line
-| &lt;number&gt;G    | move cursor to line &lt;number&gt;
-| &lt;CTRL&gt;+U     | move cursor half page up
-| &lt;CTRL&gt;+D     | move cursor half page down
-| f&lt;character&gt; | move cursor to next &lt;character&gt; |
-| F&lt;character&gt; | move cursor to last &lt;character&gt; |
-| t&lt;character&gt; | move cursor before next &lt;character&gt; |
-| T&lt;character&gt; | move cursor behind last &lt;character&gt; |
+| Command                  | Explanation |
+| ------------------------ | ----------- |
+| h                        | move cursor left
+| j                        | move cursor down
+| k                        | move cursor up
+| l                        | move cursor right
+| w                        | move cursor forward one word
+| b                        | move cursor backward one word
+| 0                        | move cursor to start of line
+| ^                        | move cursor to first nonblank character in line
+| $                        | move cursor to end of line
+| G                        | move cursor to last line
+| &lt;number&gt;G          | move cursor to line &lt;number&gt;
+| &lt;CTRL&gt;+U           | move cursor half page up
+| &lt;CTRL&gt;+D           | move cursor half page down
+| f&lt;character&gt;       | move cursor to next &lt;character&gt; |
+| F&lt;character&gt;       | move cursor to last &lt;character&gt; |
+| t&lt;character&gt;       | move cursor before next &lt;character&gt; |
+| T&lt;character&gt;       | move cursor behind last &lt;character&gt; |
+| m&lt;alpha-character&gt; | mark the position and save in &lt;alpha-character&gt; |
+| `&lt;alpha-character&gt; | go to mark saved in &lt;alpha-character&gt; |
 
 ## Inseration
 
-| Command | Explanation |
-| ------- | ----------- |
-| i       | insert before cursor |
-| a       | insert after cursor |
-| I       | insert at beginning of line |
-| A       | insert at end of line |
-| o       | insert new line after current line |
-| O       | insert new line before current line |
+| Command         | Explanation |
+| --------------- | ----------- |
+| i               | insert before cursor |
+| a               | insert after cursor |
+| I               | insert at beginning of line |
+| A               | insert at end of line |
+| o               | insert new line after current line |
+| O               | insert new line before current line |
+| p               | put saved changes after cursor/line |
+| p               | put saved changes before cursor/line |
+| y&lt;motion&gt; | yank (copy) up to &lt;motion&gt; |
+| yy              | yank (copy) current line |
+| Y               | yank (copy) current line |
 
 ## Changing Text (deleting and switch to insert mode)
 
@@ -119,7 +132,6 @@
 | $                  | end of line |
 | .                  | single character |
 | \&lt;character&gt; | turn of special meaning of &lt;character&gt; |
-
 
 # References
 
