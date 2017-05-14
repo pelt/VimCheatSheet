@@ -37,14 +37,14 @@
 
 ## Configuration
 
-| Command         | Explanation |
-| --------------- | ----------- |
-| :set number     | turn on line numbering |
-| :set nonumber   | turn off line numbering |
-| :set hlsearch   | turn on highlighting for search matches |
-| :set nohlsearch | turn off highlighting for search matches | 
-| :set incsearch  | turn on incremental searches |
-| :set noincsearch  | turn off incremental searches |
+All Configurations can be disabled with `no` like `:set nonumber`.
+
+| Command        | Explanation |
+| -------------- | ----------- |
+| :set number    | turn on line numbering |
+| :set hlsearch  | turn on highlighting for search matches |
+| :set incsearch | turn on incremental searches |
+| :set autowrite | turn on writing on closing files like :q |
 
 ## Movement
 
@@ -104,15 +104,25 @@
 | dd              | delete line |
 | d&lt;motion&gt; | delete all up to &lt;motion&gt; |
 
-## Closing File
+## Files
 
-| Command | Explanation |
-| ------- | ----------- |
-| ZZ      | writes and exit file (same as :wq) |
-| :w      | writes file |
-| :q      | exit file without writing |
-| :q!     | exit file without warning |
-| :wq     | write and exit file |
+| Command         | Explanation |
+| --------------- | ----------- |
+| :args           | show which files are open |
+| ZZ              | writes and exit file (same as :wq) |
+| :w[!]           | writes file [ignores read-only mode] |
+| :q[!]           | exit file without writing [without warning] |
+| :vi[!] [file]   | close and open file |
+| :view[!] [file] | close file and open new one in read-only mode |
+| :e[!]           | same as :vi |
+| :n[!]           | move to next file |
+| :prev[!]        | move to previous file |
+| :N[!]           | same as :prev |
+| :first[!]       | start edit of first file |
+| :rewind[!]      | same as first |
+| :last[!]        | start edit of last file |
+| CTRL-^          | start edit of last edited file (register `#`)|
+| CTRL-6          | same as CTRL-^ |
 
 ## Searching
 
