@@ -84,7 +84,7 @@ All Configurations can be disabled with `no` like `:set nonumber`.
 | o               | insert new line after current line |
 | O               | insert new line before current line |
 | p               | put saved changes after cursor/line |
-| p               | put saved changes before cursor/line |
+| P               | put saved changes before cursor/line |
 | y&lt;motion&gt; | yank (copy) up to &lt;motion&gt; |
 | yy              | yank (copy) current line |
 | Y               | yank (copy) current line |
