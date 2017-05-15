@@ -40,12 +40,14 @@
 
 All Configurations can be disabled with `no` like `:set nonumber`.
 
-| Command        | Explanation |
-| -------------- | ----------- |
-| :set number    | turn on line numbering |
-| :set hlsearch  | turn on highlighting for search matches |
-| :set incsearch | turn on incremental searches |
-| :set autowrite | turn on writing on closing files like :q |
+| Command                       | Explanation |
+| ----------------------------- | ----------- |
+| :set number                   | turn on line numbering |
+| :set hlsearch                 | turn on highlighting for search matches |
+| :set incsearch                | turn on incremental searches |
+| :set autowrite                | turn on writing on closing files like :q |
+| :set hidden                   | closing a file will :hide that |
+| :set switchbuf=&lt;string&gt; | control the switch buffer behavior (useopen, usetab, split, vsplit, newtab) |
 
 ## Movement
 
@@ -147,6 +149,25 @@ Commands that close the file will also close the window.
 | CTRL-W=                     | make all windows the same size |
 | [size]CTRL-W_               | make current window [size] (or maximal) lines |
 
+## Buffers
+
+| Command                      | Explanation |
+| ---------------------------- | ----------- |
+| :buffers                     | show all buffers |
+| :buffer &lt;number/file&gt;  | show buffer &lt;number/file&gt; |
+| :sbuffer &lt;number/file&gt; | split window and show buffer |
+| :bnext                       | show next buffer |
+| :sbnext                      | split and show next buffer |
+| :bprevious                   | show previous buffer |
+| :sbprevious                  | split and show previous buffer |
+| :bNext                       | same as :bprevious |
+| :sbNext                      | same as :sbprevious |
+| :blast                       | show last buffer |
+| :sblast                      | split and show last buffer |
+| :brewind                     | show first buffer |
+| :sbrewind                    | split and show first buffer |
+| :bmodified                   | show modified buffer |
+| :sbmodified                  | split and show modified buffer |
 
 ## Searching
 
