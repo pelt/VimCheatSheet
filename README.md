@@ -4,9 +4,10 @@
 
 * Configuration File: ```.vimrc``` (see :set commands)
 * Different Modes
+** normal
+** command
 ** visual
 ** insert
-** command
 
 | Command                  | Explanation |
 | ------------------------ | ----------- |
@@ -123,6 +124,29 @@ All Configurations can be disabled with `no` like `:set nonumber`.
 | :last[!]        | start edit of last file |
 | CTRL-^          | start edit of last edited file (register `#`)|
 | CTRL-6          | same as CTRL-^ |
+
+## Windows
+
+Commands that close the file will also close the window.
+
+| Command                     | Explanation |
+| --------------------------- | ----------- |
+| :[size]split [+cmd] [file]  | split the window horizontally |
+| :[size]vsplit [+cmd] [file] | split the window vertically |
+| :new                        | same as :split but opens a new file |
+| :vnew                       | same as :vsplit but opens a new file |
+| :sview                      | same as :split but opens in read-only mode |
+| CTRL-Ww                     | jump to the next window |
+| CTRL-Wj                     | jump to the lower window |
+| CTRL-Wk                     | jump to the upper window |
+| CTRL-Wh                     | jump to the left window |
+| CTRL-Wl                     | jump to the right window |
+| CTRL-Wc                     | close current window |
+| CTRL-W+                     | increase window size |
+| CTRL-W-                     | decrease window size |
+| CTRL-W=                     | make all windows the same size |
+| [size]CTRL-W_               | make current window [size] (or maximal) lines |
+
 
 ## Searching
 
